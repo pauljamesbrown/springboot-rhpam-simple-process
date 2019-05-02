@@ -14,4 +14,14 @@ Relevant documentation and blog links :
 1. Git clone this repo
 1. Navigate to the springboot-business-application-service folder
 1. For docker run: ```./launch.sh clean install -Pdocker,h2```
-1. This should have created a docker image. To check run ```docker images```
+1. This should have created a docker image. To check run the following command ```docker images```. You should see an entry named ```apps/springboot-business-application-service```.
+1. Check a container is not already running using ```docker ps```
+1. To start a container run the following command ```docker run <IMAGE ID>```
+1. It should start up successfully and to check attempt to access the following url ```http://localhost:8090/rest/server/containers```. Hopefully you should a success response.
+1. To create a new process instance you can use the following curl command ```curl -X POST \
+  http://localhost:8090/rest/server/containers/springboot-business-application-kjar-1_0-SNAPSHOT/processes/org.demo.SampleCaseProcess/instances \
+  -H 'Accept-Encoding: application/json' \
+  -H 'Authorization: Basic a2llc2VydmVyOmtpZXNlcnZlcjEh' \
+  -H 'Content-Type: application/json' \
+  -H 'Postman-Token: 9a4edc30-bfaf-4108-86f6-724950fcb6cb' \
+  -H 'cache-control: no-cache'```
