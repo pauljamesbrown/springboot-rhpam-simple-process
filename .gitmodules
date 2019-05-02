@@ -1,0 +1,4 @@
+[submodule "sprintboot-rhpam-simple-process-kjar"]
+	path = sprintboot-rhpam-simple-process-kjar
+	url = https://github.com/pauljamesbrown/sprintboot-rhpam-simple-process-kjar.git
+	branch = master
