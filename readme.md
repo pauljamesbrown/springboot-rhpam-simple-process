@@ -26,4 +26,4 @@ Relevant documentation and blog links :
   -H 'Postman-Token: 9a4edc30-bfaf-4108-86f6-724950fcb6cb' \
   -H 'cache-control: no-cache' ```
   
-  Note:The defaut username and password is kieserver kieserver1!
+  **Note:** The defaut username and password is kieserver kieserver1!
